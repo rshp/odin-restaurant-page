@@ -1,15 +1,17 @@
 {
-  "name": "odin-restaurant-page",
-  "version": "1.0.0",
-  "description": "Restaurant page from TOP project curriculum",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "RShp",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.71.0",
-    "webpack-cli": "^4.9.2"
-  }
+	"name": "odin-restaurant-page",
+	"version": "1.0.0",
+	"description": "Restaurant page from TOP project curriculum",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "webpack"
+	},
+	"author": "RShp",
+	"license": "ISC",
+	"devDependencies": {
+		"@iconify/iconify": "^2.2.1",
+		"webpack": "^5.71.0",
+		"webpack-cli": "^4.9.2"
+	}
 }
