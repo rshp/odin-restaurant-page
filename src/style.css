@@ -1,6 +1,21 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
 h1 {
 	color: aqua;
 }
 .header {
 	background-color: brown;
+}
+
+.backgroundContainer {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.backgroundContainer > svg {
+	width: 40px;
+	height: 40px;
 }
