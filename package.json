@@ -13,7 +13,6 @@
 	"author": "RShp",
 	"license": "ISC",
 	"devDependencies": {
-		"@iconify/iconify": "^2.2.1",
 		"cross-env": "^7.0.3",
 		"css-loader": "^6.7.1",
 		"css-minimizer-webpack-plugin": "^3.4.1",
