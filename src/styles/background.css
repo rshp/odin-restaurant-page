@@ -1,0 +1,13 @@
+.background-container {
+	/* position: fixed; */
+	z-index: -1;
+	display: grid;
+	width: 100vw;
+	height: 100vh;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+}
+
+.background-container > .background-icon {
+	width: 100%;
+}

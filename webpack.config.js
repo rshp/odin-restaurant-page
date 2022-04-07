@@ -29,7 +29,7 @@ module.exports = {
 	output: {
 		filename: '[name].[contenthash].bundle.js',
 		path: buildPath,
-		assetModuleFilename: 'images/[hash][ext][query]',
+		assetModuleFilename: 'assets/[hash][ext][query]',
 		clean: true,
 	},
 	module: {
