@@ -1,0 +1,12 @@
+.menutab-content {
+	width: 600px;
+	height: 400px;
+	background: rgba(83, 142, 253, 0.18);
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	margin: 2rem;
+	pointer-events: none;
+	filter: drop-shadow(10px 10px 3px rgb(0, 0, 0));
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(16.5px);
+	border-radius: 2rem;
+}
