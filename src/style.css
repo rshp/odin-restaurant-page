@@ -60,4 +60,5 @@ main {
 
 .tab {
 	pointer-events: all;
+	cursor: pointer;
 }
