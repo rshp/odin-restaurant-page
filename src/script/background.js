@@ -18,6 +18,7 @@ export const generateBackround = (() => {
 		Array.from(iconSrc).forEach((source) => {
 			let icon = document.createElement('img');
 			icon.classList.add('background-icon');
+			icon.setAttribute('draggable', false);
 			icon.src = source;
 			iconList.push(icon);
 		});
