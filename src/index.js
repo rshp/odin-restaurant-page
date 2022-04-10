@@ -3,6 +3,7 @@ import { generateBackround } from './script/background';
 import './style.css';
 import { home } from './script/home';
 import { menu } from './script/menu';
+import Tab from './script/tab';
 
 const contentContainer = document.querySelector('.content');
 // createContent(contentContainer);
@@ -25,8 +26,11 @@ main.classList.add('content');
 body.appendChild(heroWrapper);
 body.appendChild(main);
 
-home.tabInit(nav, main);
-menu.tabInit(nav, main);
+Tab.tabBarContainer = nav;
+Tab.contentContainer = main;
+
+home.tabInit();
+menu.tabInit();
 
 // const header = document.createElement('header');
 // header.textContent = 'Icon restaurant';
