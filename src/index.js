@@ -1,4 +1,3 @@
-import createContent from './homePage';
 import { generateBackround } from './script/background';
 import './style.css';
 import { home } from './script/home';
