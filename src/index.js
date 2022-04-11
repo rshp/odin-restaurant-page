@@ -32,7 +32,3 @@ Tab.contentContainer = main;
 home.tabInit();
 menu.tabInit();
 contact.tabInit();
-
-// const header = document.createElement('header');
-// header.textContent = 'Icon restaurant';
-// body.appendChild(header);

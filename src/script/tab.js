@@ -19,8 +19,10 @@ export default class Tab {
 	}
 
 	setContent(content) {
-		this.contentDiv.innerHTML = '';
-		this.contentDiv.innerHTML = content;
+		while (this.contentDiv.firstChild) {
+			this.contentDiv.removeChild(this.contentDiv.firstChild);
+		}
+		this.contentDiv.appendChild(content);
 	}
 
 	#tabSwitchEL() {
