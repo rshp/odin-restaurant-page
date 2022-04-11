@@ -2,6 +2,7 @@ import { generateBackround } from './script/background';
 import './style.css';
 import { home } from './script/home';
 import { menu } from './script/menu';
+import { contact } from './script/contact';
 import Tab from './script/tab';
 
 const contentContainer = document.querySelector('.content');
@@ -30,6 +31,7 @@ Tab.contentContainer = main;
 
 home.tabInit();
 menu.tabInit();
+contact.tabInit();
 
 // const header = document.createElement('header');
 // header.textContent = 'Icon restaurant';
