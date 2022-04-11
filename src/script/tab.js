@@ -1,11 +1,11 @@
 export default class Tab {
 	constructor(tabName, id) {
-		this.tabTitle = document.createElement('div');
-		this.tabTitle.classList.add('tab');
-		this.tabTitle.id = id;
-		this.tabTitle.textContent = tabName;
-		this.content = document.createElement('div');
-		this.content.classList.add(`${id}tab-content`);
+		this.tabTitleDiv = document.createElement('div');
+		this.tabTitleDiv.classList.add('tab');
+		this.tabTitleDiv.id = id;
+		this.tabTitleDiv.textContent = tabName;
+		this.contentDiv = document.createElement('div');
+		this.contentDiv.classList.add(`${id}tab-content`);
 		this.isCurrent = false;
 	}
 
@@ -13,20 +13,29 @@ export default class Tab {
 	static contentContainer;
 
 	tabInit() {
-		Tab.tabBarContainer.appendChild(this.tabTitle);
-		this.#addEL();
-		if (this.isCurrent) Tab.contentContainer.appendChild(this.content);
+		Tab.tabBarContainer.appendChild(this.tabTitleDiv);
+		this.#tabSwitchEL();
+		if (this.isCurrent) Tab.contentContainer.appendChild(this.contentDiv);
 	}
 
-	#addEL() {
-		this.tabTitle.addEventListener('click', (e) => {
-			if (e.target.id === this.tabTitle.id) {
-				this.tabTitle.classList.add('tab-highlight');
+	setContent(content) {
+		this.contentDiv.innerHTML = '';
+		this.contentDiv.innerHTML = content;
+	}
+
+	#tabSwitchEL() {
+		Tab.tabBarContainer.addEventListener('click', (e) => {
+			if (!e.target.classList.contains('tab')) {
+				console.log('clicked on empty space');
+				return;
+			}
+			if (e.target.id === this.tabTitleDiv.id) {
+				this.tabTitleDiv.classList.add('tab-highlight');
 				Tab.contentContainer.innerHTML = '';
-				Tab.contentContainer.appendChild(this.content);
+				Tab.contentContainer.appendChild(this.contentDiv);
 				this.isCurrent = true;
 			} else {
-				this.tabTitle.classList.remove('tab-highlight');
+				this.tabTitleDiv.classList.remove('tab-highlight');
 				this.isCurrent = false;
 			}
 		});
