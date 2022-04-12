@@ -5,8 +5,6 @@ import { menu } from './script/menu';
 import { contact } from './script/contact';
 import Tab from './script/tab';
 
-const contentContainer = document.querySelector('.content');
-// createContent(contentContainer);
 generateBackround.setIconsNum(20, 20);
 const backgroundContainer = generateBackround.createBackgroundContainer();
 const body = document.querySelector('body');

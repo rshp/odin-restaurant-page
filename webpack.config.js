@@ -11,6 +11,7 @@ const plugins = [
 	new MiniCssExtractPlugin({ filename: '[name].[contenthash].css' }),
 	new HtmlWebpackPlugin({
 		template: './src/index.html',
+		title: 'Icon restaurant',
 	}),
 ];
 
