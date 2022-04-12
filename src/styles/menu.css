@@ -1,12 +1,33 @@
 .menutab-content {
-	width: 600px;
-	height: 2000px;
 	background: rgba(253, 83, 202, 0.18);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	margin: 2rem;
 	pointer-events: none;
-	filter: drop-shadow(10px 10px 3px rgb(0, 0, 0));
+	filter: drop-shadow(10px 10px 3px rgba(0, 0, 0, 0.648));
 	backdrop-filter: blur(6.5px);
-	-webkit-backdrop-filter: blur(16.5px);
+	-webkit-backdrop-filter: blur(6.5px);
 	border-radius: 2rem;
+}
+.menutab-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap: 1rem;
+	width: 80vw;
+	padding: 1rem;
+	max-width: 50ch;
+}
+
+.menutab-content img {
+	border-radius: 1rem;
+	width: 100%;
+	padding: 1rem;
+	mix-blend-mode: soft-light;
+	pointer-events: all;
+	border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.menutab-content img:hover {
+	border: 1px solid rgba(255, 255, 255, 0.4);
+	background-color: rgba(255, 255, 255, 0.252);
+	transition: 0.5s all;
 }

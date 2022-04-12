@@ -1,6 +1,4 @@
 .hometab-content {
-	width: 600px;
-	height: 400px;
 	background: rgba(83, 142, 253, 0.18);
 	border: 1px solid rgba(255, 255, 255, 0.4);
 	margin: 2rem;
@@ -10,7 +8,7 @@
 	-webkit-backdrop-filter: blur(16.5px);
 	border-radius: 2rem;
 	padding: 1rem;
-	width: 80vw;
+	max-width: 50ch;
 }
 
 .hometab-content {
@@ -21,7 +19,10 @@
 
 .hometab-content .card-title {
 	border-radius: 1rem;
-	filter: drop-shadow(0px 0px 3px rgba(255, 255, 255, 0.863));
-	backdrop-filter: blur(6.5px);
-	-webkit-backdrop-filter: blur(6.5px);
+	padding: 1rem;
+	background-color: rgba(255, 255, 255, 0.252);
+	mix-blend-mode: soft-light;
+	font-size: 2rem;
+	font-weight: 500;
+	border: 1px solid rgba(255, 255, 255, 0.4);
 }
