@@ -1,5 +1,5 @@
 import { generateBackround } from './script/background';
-import './style.css';
+import './styles/style.css';
 import { home } from './script/home';
 import { menu } from './script/menu';
 import { contact } from './script/contact';
