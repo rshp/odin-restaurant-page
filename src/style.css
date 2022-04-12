@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,500&display=swap');
 * {
 	padding: 0;
 	margin: 0;
@@ -8,7 +6,7 @@
 }
 
 body {
-	font-family: 'Rye', cursive;
+	font-family: 'Raleway', cursive;
 	font-size: 20px;
 	display: flex;
 	flex-direction: column;
@@ -22,11 +20,13 @@ header {
 	/* From https://css.glass */
 	background: rgba(83, 142, 253, 0.18);
 	border: 1px solid rgba(255, 255, 255, 0.4);
-	color: royalblue;
 }
 
 header .title {
+	font-weight: 500;
+	font-style: italic;
 	font-size: 4rem;
+	color: steelblue;
 }
 
 header .title-low {
