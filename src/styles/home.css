@@ -9,4 +9,15 @@
 	backdrop-filter: blur(6.5px);
 	-webkit-backdrop-filter: blur(16.5px);
 	border-radius: 2rem;
+	padding: 1rem;
+	width: 80vw;
+}
+
+.hometab-content .card {
+	display: flex;
+	gap: 1rem;
+}
+
+.hometab-content .card .card-title {
+	width: 40%;
 }

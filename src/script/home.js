@@ -3,35 +3,32 @@ import Tab from './tab';
 
 export const home = new Tab('Home', 'home');
 home.isCurrent = true;
-const homeContent = document.createElement('div');
-homeContent.appendChild(
-	createCard(
-		'Iconific',
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam rem, enim fuga et consequatur recusandae omnis blanditiis facilis voluptatum corporis impedit maxime excepturi repudiandae voluptatibus quos dignissimos cumque quia.m20'
-	)
+const homeContent = document.createDocumentFragment();
+createCard(
+	'Iconific',
+	'Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita numquam rem, enim fuga et consequatur recusandae omnis blanditiis facilis voluptatum corporis impedit maxime excepturi repudiandae voluptatibus quos dignissimos cumque quia.',
+	homeContent
 );
-homeContent.appendChild(
-	createCard(
-		'SVGlitious',
-		'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime corrupti dolores officia adipisci. Quia, nam!'
-	)
+createCard(
+	'SVGlitious',
+	'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime corrupti dolores officia adipisci. Quia, nam!',
+	homeContent
 );
-homeContent.appendChild(
-	createCard(
-		'Glassy delivery',
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis voluptatem laborum odit vero inventore aperiam deserunt delectus vel quidem.'
-	)
+createCard(
+	'Glassy delivery',
+	'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut veritatis voluptatem laborum odit vero inventore aperiam deserunt delectus vel quidem.',
+	homeContent
 );
-
-const test = document.createElement('div');
-test.appendChild(homeContent);
 
 home.setContent(homeContent);
 
-function createCard(cardTitle, cardText) {
-	const card = document.createElement('div');
-	card.classList.add('card');
-	card.innerHTML = `<div class="card-title">${cardTitle}</div>
-  <div class="card-content">${cardText}</div>`;
-	return card;
+function createCard(cardTitle, cardText, parentElement) {
+	const fragment = document.createDocumentFragment();
+	const div1 = document.createElement('div');
+	const div2 = document.createElement('div');
+	div1.textContent = `${cardTitle}`;
+	div2.textContent = `${cardText}`;
+	fragment.appendChild(div1);
+	fragment.appendChild(div2);
+	parentElement.appendChild(fragment);
 }
