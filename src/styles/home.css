@@ -13,11 +13,17 @@
 	width: 80vw;
 }
 
-.hometab-content .card {
-	display: flex;
+.hometab-content {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
 	gap: 1rem;
 }
 
-.hometab-content .card .card-title {
-	width: 40%;
+.hometab-content .card-title {
+	border-radius: 3rem;
+	background-color: white;
+
+	/* filter: drop-shadow(10px 10px 3px rgb(0, 0, 0)); */
+	backdrop-filter: blur(6.5px);
+	-webkit-backdrop-filter: blur(16.5px);
 }
